@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+        font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*-----HEADER------*/
+
+header{
+        background-color: rgb(59, 59, 59);
+}
+header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+header nav div{
+        display: flex;
+        align-items: center;
+}
+header nav div img{
+        width: 80px;
+        height: 80px;
+}
+header nav div h2{
+        font-size: 30px;
+        margin: 10px;
+        color: white;
+}
+header nav ul{
+        display: flex;
+}
+header nav ul li{
+        list-style: none;
+        margin: 5px;
+}
+header nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin: 5px;
+}
+
+
+/*-------MAIN---------*/
+
+/*--- INDEX ------*/
+.hero{
+        background-image: url("../img/porsche-backgroundindex.jpg");
+        width: 100%;
+        height: calc(100vh - 126px);
+        color: white;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.hero h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+}
+
+.hero p{
+        font-size: 25px;
+        margin-bottom: 15px;
+}
+.hero a{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+        margin: 5px;
+        border: 2px solid gray;
+        width: 180px;
+        font-size: 20px;
+}
+.nuevos-ingresos h2{
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        background-color: black;
+        color: white;
+}
+.nuevos-ingresos {
+        background-color: rgba(80, 80, 80, 0.861);
+        width: 100%;
+}
+.nuevos-ingresos .nuevos-ingresos-tarjetas div img{
+        width: 190px;
+        height: 190px;
+}
+.nuevos-ingresos .nuevos-ingresos-tarjetas div{
+        border: 3px solid gray;
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+        text-align: center;
+        position: relative;
+}
+.nuevos-ingresos .nuevos-ingresos-tarjetas div h3{
+        position: absolute;
+        bottom:0;
+        padding: 5px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        width: 100%;
+}
+.nuevos-ingresos h2{
+        padding: 5px;
+}
+
+.nuevos-ingresos .nuevos-ingresos-tarjetas{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+}
+
+.queres-vender{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(192, 191, 191, 0.861);
+
+}
+.queres-vender div{
+        font-size: 25px;
+        text-align: center;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.queres-vender img{
+        width: 600px;
+        height: 450px;
+}
+.boton-queres-vender{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid gray;
+        width: 180px;
+        font-size: 20px;
+}
+.acerca-de-nosotros{
+        background-image: url("../img/nosotros.jpg");
+        width: 100%;
+        height: 450px;
+        color: white;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.acerca-de-nosotros h2{
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+}
+.acerca-de-nosotros p{
+        font-size: 20px;
+        padding: 20px;
+}
+
+/*----- COMPRA -----*/
+
+.hero-compra{
+        background-image: url("../img/background3.jpg");
+        width: 100%;
+        height: 450px;
+        color: white;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.hero-compra h2 {
+        font-size: 50px;
+        margin-bottom: 5px;
+}
+
+.hero-compra p{
+        font-size: 25px;
+        margin-bottom: 15px;
+}
+
+.que-buscas{
+        background-color: rgba(192, 191, 191, 0.861);
+        width: 100%;
+        height: 170px;
+}
+
+.que-buscas .que-buscas-tarjetas{
+        display: flex;
+        justify-content: space-around;
+}
+.que-buscas .que-buscas-tarjetas div{
+        border: 1px solid black;
+        position: relative;
+        margin-top: 8px;
+        width: 100px;
+        height: 120px;
+}
+
+.que-buscas .que-buscas-tarjetas div img{
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        margin-top: 15px;
+}
+.que-buscas .que-buscas-tarjetas div a{
+        text-decoration: none;
+        color: black;
+        margin: 5px;
+        position: absolute;
+        text-align: center;
+}
+.que-buscas h2{
+        font-size: 30px;
+        text-align: center;
+        background-color: black;
+        color: white;
+}
+
+.busqueda-especifica{
+        background-color: rgba(80, 80, 80, 0.861);
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+}
+.busqueda-especifica h2{
+        color: white;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+}
+.busqueda-especifica div{
+        font-size: 25px;
+        color: white;
+        padding: 5px;
+}
+.busqueda-especifica-boton input{
+        font-size: 15px;
+        padding: 5px;
+        margin: 10px;
+        background-color: black;
+        color: white;
+}
+
+.galeria{
+        background-color: rgba(192, 191, 191, 0.861);
+}
+
+.galeria h2{
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 30px ;
+}
+.grid-galeria{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 250px;
+        gap: 15px;
+        padding: 10px;
+}
+.grid-galeria div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+}
+
+.grid-galeria-img2{
+        grid-column: span 2;
+}
+.grid-galeria-img5{
+        grid-row: span 2;
+}
+.grid-galeria-img8{
+        grid-column: span 2;
+}
+
+/*----VENDE------*/
+
+.hero-vende{
+        background-image: url("../img/porsche2.jpg");
+        width: 100%;
+        height: 450px;
+        color: white;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.vende{
+        background-color: rgba(192, 191, 191, 0.861);
+        font-size: 25px;
+}
+.vende h2{
+        color: white;
+        background-color: black;
+        font-size: 30px;
+        text-align: center;
+}
+.vende h3{
+        font-size: 25px;
+        font-weight: 400;
+}
+.vende div{
+        padding: 10px;
+}
+
+.subi-imagenes{
+        background-color: rgba(192, 191, 191, 0.861);
+}
+.subi-imagenes h2{
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        text-align: center;
+
+}
+.subi-imagenes h3{
+        font-size: 25px;
+        padding: 10px;
+}
+.subi-imagenes select{
+        margin: 10px;
+        font-size: 15px;
+}
+
+/*----NOSOTROS---*/
+
+.hero-nosotros{
+        background-image: url("../img/bentley-flying-spur-hybrid-2022_1280x720_xtrafondos.com.jpg");
+        width: 100%;
+        height: 450px;
+        color: white;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.nosotros{
+        background-color: rgba(113, 111, 111, 0.861);
+        display: flex;
+        align-items: center;
+
+}
+
+.imagen-nosotros{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 400px;
+}
+.texto-nosotros{
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+}
+
+.queres-unirte{
+        background-color: rgba(192, 191, 191, 0.861);
+        display: flex;
+        align-items: center;
+
+}
+.imagen-queres-unirte{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 400px;
+}
+.texto-queres-unirte{
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+}
+.texto-queres-unirte p{
+        margin-bottom: 15px;
+}
+.texto-queres-unirte a{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+        margin: 5px;
+        width: 180px;
+        font-size: 20px;
+}
+
+/*---CONTACTO---*/
+
+.hero-contacto{
+        background-image: url("../img/chevrolet-corvette-c8_1280x720_xtrafondos.com.jpg");
+        width: 100%;
+        height: 450px;
+        color: white;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.formulario{
+        background-color: rgba(192, 191, 191, 0.861);
+        font-size: 20px;
+        padding: 20px;
+}
+.deja-mensaje h2{
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+}
+.formulario h3{
+        font-weight: 400;
+        font-size: 20px;
+}
+
+.contacto-boton input{
+        font-size: 15px;
+        padding: 5px;
+        margin: 10px;
+        background-color: black;
+        color: white;
+}
+
+.seguinos{
+        background-color: rgba(192, 191, 191, 0.861);
+        width: 100%;
+        height: 170px;
+}
+
+.seguinos .seguinos-tarjetas{
+        display: flex;
+        justify-content: space-around;
+}
+.seguinos .seguinos-tarjetas div{
+        width: 100px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+}
+
+.seguinos .seguinos-tarjetas div img{
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+}
+.seguinos .seguinos-tarjetas div a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+}
+.seguinos h2{
+        font-size: 30px;
+        text-align: center;
+        background-color: black;
+        color: white;
+}
+
+
+
+/*------FOOTER-------*/
+footer{
+        background-color: rgb(59, 59, 59);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+footer img{
+        width: 80px;
+        height: 80px;
+}
+footer div img{
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+}
