@@ -47,6 +47,34 @@ header nav ul li a{
         margin: 5px;
 }
 
+/*------MEDIA-QUERY-HEADER----------*/
+
+@media screen and (max-width: 575px) {
+        header nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+        }         
+}
+@media screen and (max-width: 400px){
+        header nav div img{
+                width: 40px;
+                height: 40px;
+        }
+        header nav div h2{
+                font-size: 14px;
+                margin: 10px;
+                color: white;
+        }
+        header nav ul li a{
+                text-decoration: none;
+                color: white;
+                font-size: 10px;
+                margin: 5px;
+        }
+}
+
 
 /*-------MAIN---------*/
 
@@ -135,16 +163,21 @@ header nav ul li a{
 
 }
 .queres-vender div{
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         padding: 5px;
-        display: flex;
         flex-direction: column;
         align-items: center;
 }
+.queres-vender div p{
+        margin-bottom: 15px;
+}
+.queres-vender div a{
+        padding: 5px;
+}
 .queres-vender img{
-        width: 600px;
-        height: 450px;
+        width: 50%;
+        height: 400px;
 }
 .boton-queres-vender{
         font-size: 10px;
@@ -177,6 +210,21 @@ header nav ul li a{
 .acerca-de-nosotros p{
         font-size: 20px;
         padding: 20px;
+        text-align: center;
+}
+
+/*---MEDIA QUERY INDEX-----*/
+
+@media screen and (max-width: 1000px){
+        
+        .hero h1 {
+                font-size: 40px;
+                margin-bottom: 5px;
+        }
+        .hero p{
+                font-size: 20px;
+                margin-bottom: 15px;
+        }
 }
 
 /*----- COMPRA -----*/
@@ -216,24 +264,21 @@ header nav ul li a{
         justify-content: space-around;
 }
 .que-buscas .que-buscas-tarjetas div{
-        border: 1px solid black;
-        position: relative;
-        margin-top: 8px;
         width: 100px;
         height: 120px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
 }
 
 .que-buscas .que-buscas-tarjetas div img{
         width: 80px;
         height: 80px;
         margin: 5px;
-        margin-top: 15px;
 }
 .que-buscas .que-buscas-tarjetas div a{
         text-decoration: none;
         color: black;
-        margin: 5px;
-        position: absolute;
         text-align: center;
 }
 .que-buscas h2{
@@ -241,6 +286,7 @@ header nav ul li a{
         text-align: center;
         background-color: black;
         color: white;
+        margin-bottom: 8px;
 }
 
 .busqueda-especifica{
@@ -378,19 +424,18 @@ header nav ul li a{
         background-color: rgba(113, 111, 111, 0.861);
         display: flex;
         align-items: center;
-
 }
 
 .imagen-nosotros{
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 90%;
         height: 400px;
 }
 .texto-nosotros{
         text-align: center;
         padding: 10px;
-        font-size: 25px;
+        font-size: 22px;
 }
 
 .queres-unirte{
@@ -402,13 +447,13 @@ header nav ul li a{
 .imagen-queres-unirte{
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 90%;
         height: 400px;
 }
 .texto-queres-unirte{
         text-align: center;
         padding: 10px;
-        font-size: 25px;
+        font-size: 23px;
 }
 .texto-queres-unirte p{
         margin-bottom: 15px;
@@ -423,6 +468,172 @@ header nav ul li a{
         margin: 5px;
         width: 180px;
         font-size: 20px;
+}
+
+/*-----MEDIA-QUERY-NOSOTROS-------*/
+
+@media screen and (max-width:1000px) {
+        .texto-nosotros{
+                text-align: center;
+                padding: 10px;
+                font-size: 22px;
+        }
+        .texto-nosotros p{
+                font-size: 20px;
+        }
+        .imagen-nosotros{
+                display: flex;
+                justify-content: center;
+                width: 80%;
+                height: 400px;
+        }
+
+}
+@media screen and (max-width: 900px){
+        .texto-nosotros{
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+        }
+        .texto-nosotros p{
+                font-size: 18px;
+        }
+        .imagen-nosotros{
+                display: flex;
+                justify-content: center;
+                width: 80%;
+                height: 400px;
+        }
+        .texto-queres-unirte{
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+        }
+}
+@media screen and (max-width: 650px) {
+        .imagen-nosotros{
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                height: 300px;
+        }
+        .imagen-queres-unirte{
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                height: 300px;
+        }
+        .texto-queres-unirte a{
+                font-size: 14px;
+        }
+}
+@media screen and (max-width: 600px){
+        .texto-nosotros p {
+                font-size: 14px;
+                padding: 5px;
+        }
+        .texto-nosotros h3 {
+                font-size: 17px;
+                padding: 5px;
+        }
+        .imagen-nosotros{
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                height: 300px;
+        }
+        .texto-queres-unirte p {
+                font-size: 14px;
+                padding: 5px;
+        }
+        .texto-queres-unirte h3 {
+                font-size: 17px;
+                padding: 5px;
+        }
+        .texto-queres-unirte a{
+                font-size: 10px;
+        }
+        .imagen-queres-unirte{
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                height: 300px;
+        }
+}
+@media screen and (max-width: 480px){
+        .texto-nosotros p {
+                font-size: 11px;
+                padding: 5px;
+        }
+        .texto-nosotros h3 {
+                font-size: 14px;
+                padding: 5px;
+        }
+        .imagen-nosotros{
+                display: flex;
+                justify-content: center;
+                width: 200px;
+                height: 200px;
+        }
+        .texto-queres-unirte p {
+                font-size: 11px;
+                padding: 5px;
+        }
+        .texto-queres-unirte h3 {
+                font-size: 14px;
+                padding: 5px;
+        }
+        .texto-queres-unirte a{
+                font-size: 8px;
+        }
+        .imagen-queres-unirte{
+                display: flex;
+                justify-content: center;
+                width: 200px;
+                height: 200px;
+        }
+}
+@media screen and (max-width: 400px){
+        .hero-nosotros{
+                height: 300px;
+        }
+        .hero-nosotros h2{
+                font-size: 14px;
+        }
+        .hero-nosotros p{
+                font-size: 10px;
+        }
+        .texto-nosotros p {
+                font-size: 8px;
+                padding: 5px;
+        }
+        .texto-nosotros h3 {
+                font-size: 11px;
+                padding: 5px;
+        }
+        .imagen-nosotros{
+                display: flex;
+                justify-content: center;
+                width: 140px;
+                height: 140px;
+        }
+        .texto-queres-unirte p {
+                font-size: 8px;
+                padding: 5px;
+        }
+        .texto-queres-unirte h3 {
+                font-size: 11px;
+                padding: 5px;
+        }
+        .texto-queres-unirte a{
+                font-size: 6px;
+        }
+        .imagen-queres-unirte{
+                display: flex;
+                justify-content: center;
+                width: 140px;
+                height: 140px;
+        }
 }
 
 /*---CONTACTO---*/
@@ -517,4 +728,17 @@ footer div img{
         width: 35px;
         height: 35px;
         margin: 5px;
+}
+
+/*-----MEDIA-QUERY-FOOTER--------*/
+@media screen and (max-width: 400px){
+        footer img{
+                width: 40px;
+                height: 40px;
+        }
+        footer div img{
+                width: 20px;
+                height: 20px;
+                margin: 5px;
+        }
 }
