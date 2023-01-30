@@ -101,6 +101,7 @@ header nav ul li a{
 .hero p{
         font-size: 25px;
         margin-bottom: 15px;
+        text-align: center;
 }
 .hero a{
         font-size: 20px;
@@ -111,6 +112,41 @@ header nav ul li a{
         padding: 10px;
         margin: 5px;
         border: 2px solid gray;
+        font-size: 20px;
+}
+.queres-vender{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.932);
+        color: white;
+        align-items: center;
+
+}
+.queres-vender .queres-vender-texto{
+        font-size: 20px;
+        width: 75%;
+        text-align: center;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+}
+.queres-vender div p{
+        margin-bottom: 15px;
+}
+.queres-vender div a{
+        padding: 5px;
+}
+.imagen-queres-vender img{
+        width: 90%;
+        height: 400px;
+}
+.boton-queres-vender{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid gray;
         width: 180px;
         font-size: 20px;
 }
@@ -118,19 +154,22 @@ header nav ul li a{
         padding: 10px;
         font-size: 30px;
         text-align: center;
-        background-color: black;
+        background-color: rgb(27, 25, 25);
         color: white;
+        padding: 5px;
 }
 .nuevos-ingresos {
-        background-color: rgba(80, 80, 80, 0.861);
+        background-color: rgba(67, 61, 61, 0.861);
         width: 100%;
+        display: flex;
+        flex-direction: column;
 }
 .nuevos-ingresos .nuevos-ingresos-tarjetas div img{
         width: 190px;
         height: 190px;
 }
 .nuevos-ingresos .nuevos-ingresos-tarjetas div{
-        border: 3px solid gray;
+        border: 3px solid rgb(72, 72, 72);
         width: 200px;
         height: 200px;
         margin: 15px;
@@ -145,52 +184,16 @@ header nav ul li a{
         color: white;
         width: 100%;
 }
-.nuevos-ingresos h2{
-        padding: 5px;
-}
 
 .nuevos-ingresos .nuevos-ingresos-tarjetas{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        margin: 20px;
 }
 
-.queres-vender{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(192, 191, 191, 0.861);
-
-}
-.queres-vender div{
-        font-size: 20px;
-        text-align: center;
-        padding: 5px;
-        flex-direction: column;
-        align-items: center;
-}
-.queres-vender div p{
-        margin-bottom: 15px;
-}
-.queres-vender div a{
-        padding: 5px;
-}
-.queres-vender img{
-        width: 50%;
-        height: 400px;
-}
-.boton-queres-vender{
-        font-size: 10px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        background-color: rgb(0, 0, 0);
-        border: 2px solid gray;
-        width: 180px;
-        font-size: 20px;
-}
 .acerca-de-nosotros{
-        background-image: url("../img/nosotros.jpg");
+        background-image: url("../img/prueba-index4.jpg");
         width: 100%;
         height: 450px;
         color: white;
@@ -208,7 +211,7 @@ header nav ul li a{
         color: white;
 }
 .acerca-de-nosotros p{
-        font-size: 20px;
+        font-size: 25px;
         padding: 20px;
         text-align: center;
 }
@@ -224,6 +227,72 @@ header nav ul li a{
         .hero p{
                 font-size: 20px;
                 margin-bottom: 15px;
+        }
+}
+@media screen and (max-width: 850px) {
+        .hero h1{
+                font-size: 30px;
+        }
+        .hero p{
+                font-size: 15px;
+        }
+        .hero a{
+                font-size: 13px;
+        }
+        .queres-vender-texto h2 {
+                font-size: 30px;
+        }
+        .queres-vender .queres-vender-texto p{
+                font-size: 15px;
+        }
+        .queres-vender .queres-vender-texto a{
+                font-size: 13px;
+        }
+        .acerca-de-nosotros h2{
+                font-size: 30px;
+        }
+        .acerca-de-nosotros p{
+                font-size: 15px;
+        }
+        .nuevos-ingresos-tarjetas div h3{
+                font-size: 15px;
+        }
+}
+@media screen and (max-width: 450px) {
+        .hero h1{
+                font-size: 20px;
+        }
+        .hero p{
+                font-size: 11px;
+        }
+        .hero a{
+                font-size: 8px;
+        }
+        .queres-vender-texto h2 {
+                font-size: 20px;
+        }
+        .queres-vender .queres-vender-texto p{
+                font-size: 11px;
+        }
+        .queres-vender .queres-vender-texto a{
+                font-size: 8px;
+        }
+        .acerca-de-nosotros h2{
+                font-size: 20px;
+        }
+        .acerca-de-nosotros p{
+                font-size: 11px;
+        }
+        .nuevos-ingresos-tarjetas div h3{
+                font-size: 11px;
+        }
+        .nuevos-ingresos .nuevos-ingresos-tarjetas div img{
+                width: 150px;
+                height: 150px;
+        }
+        .nuevos-ingresos .nuevos-ingresos-tarjetas div{
+                width: 160px;
+                height: 160px;
         }
 }
 
@@ -350,6 +419,118 @@ header nav ul li a{
 .grid-galeria-img8{
         grid-column: span 2;
 }
+/*-----MEDIA-QUERY-COMPRA-------*/
+
+@media screen and (max-width:880px) {
+        .hero-compra h2 {
+                font-size: 30px;
+        }
+        
+        .hero-compra p{
+                font-size: 20px;
+        }
+        .que-buscas h2{
+                font-size: 30px;
+        }
+        .que-buscas .que-buscas-tarjetas div a{
+                font-size: 15px;
+        }
+        .busqueda-especifica div{
+                font-size: 20px;
+        }
+        .grid-galeria{
+                grid-template-columns: repeat(2,1fr);
+        }
+        .grid-galeria-img3{
+                grid-column: span 2;
+        }
+        .grid-galeria-img2{
+                grid-column: span 1;
+        }
+        .grid-galeria-img5{
+                grid-row: span 2;
+        }
+        .grid-galeria-img8{
+                grid-column: span 1;
+        }
+        .grid-galeria-img9{
+                grid-column: span 2;
+        }
+}
+@media screen and (max-width:650px) {
+        .hero-compra h2 {
+                font-size: 25px;
+        }
+        
+        .hero-compra p{
+                font-size: 15px;
+        }
+        .que-buscas{
+                height: 140px;
+        }
+        .que-buscas h2{
+                font-size: 25px;
+        }
+        .que-buscas .que-buscas-tarjetas div a{
+                font-size: 11px;
+        }
+        .que-buscas .que-buscas-tarjetas div{
+                width: 70px;
+                height: 95px;
+        }
+        .busqueda-especifica div{
+                font-size: 15px;
+        }
+        .grid-galeria{
+                grid-auto-rows: 150px;
+        }
+        .que-buscas .que-buscas-tarjetas div img{
+                width: 65px;
+                height: 65px;
+        }
+        
+}
+@media screen and (max-width:450px) {
+        .hero-compra h2 {
+                font-size: 20px;
+        }
+        
+        .hero-compra p{
+                font-size: 11px;
+        }
+        .que-buscas h2{
+                font-size: 20px;
+        }
+        .que-buscas .que-buscas-tarjetas div a{
+                font-size: 8px;
+        }
+        .busqueda-especifica div{
+                font-size: 11px;
+        }
+        .busqueda-especifica h2{
+                font-size: 20px;
+        }
+        .busqueda-especifica-boton input{
+                font-size: 11px;
+        }
+        .galeria h2{
+                font-size: 20px;
+        }
+        .grid-galeria{
+                grid-auto-rows: 130px;
+        }
+        .que-buscas .que-buscas-tarjetas div img{
+                width: 50px;
+                height: 50px;
+        }
+        
+}
+@media screen and (max-width:400px) {
+        .grid-galeria{
+                grid-auto-rows: 100px;
+        }
+}
+        
 
 /*----VENDE------*/
 
