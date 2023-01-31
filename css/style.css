@@ -358,7 +358,7 @@ body{
 .busqueda-especifica{
         background-color: rgba(80, 80, 80, 0.861);
         display: flex;
-        align-items:flex-start;
+        align-items: center;
         flex-direction: column;
 }
 .busqueda-especifica h2{
@@ -372,6 +372,13 @@ body{
         font-size: 25px;
         color: white;
         padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.busqueda-especifica .busqueda-especifica-boton{
+        display: flex;
+        flex-direction: row;
 }
 .busqueda-especifica-boton input{
         font-size: 15px;
@@ -551,7 +558,7 @@ body{
 }
 
 .vende{
-        background-color: rgba(102, 102, 102, 0.861);
+        background-color: rgba(80, 80, 80, 0.861);
         font-size: 25px;
 }
 .vende div{
@@ -560,8 +567,9 @@ body{
 .vende h2{
         color: white;
         background-color: black;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
+        margin: 0;
 }
 .vende h3{
         font-size: 20px;
@@ -569,6 +577,24 @@ body{
 }
 .vende div{
         padding: 10px;
+}
+.formulario-vende{
+        background-color: rgba(80, 80, 80, 0.861);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+}
+.formulario-vende div{
+        font-size: 25px;
+        color: white;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.formulario-vende .busqueda-especifica-boton{
+        display: flex;
+        flex-direction: row;
 }
 .ejemplo h2{
         background-color: black;
@@ -865,7 +891,24 @@ body{
         font-weight: 400;
         font-size: 20px;
 }
-
+.formulario{
+        background-color: rgba(80, 80, 80, 0.861);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+}
+.formulario div{
+        font-size: 25px;
+        color: white;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.formulario .contacto-boton{
+        display: flex;
+        flex-direction: row;
+}
 .contacto-boton input{
         font-size: 15px;
         padding: 5px;
