@@ -1,84 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Alito</title>
+    <!--LINK BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LINK-CSS-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <div class="grid-contenedor">
-        <header>
-            <nav>
-                <div>
-                    <img src="./img/icono.png" alt="Logo">
-                    <h2>ALITO</h2>
+    <header>
+        <nav class="navbar navbar-expand-lg barra-navegador">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/icono.png" alt=""></a>
+                <button class="navbar-toggler boton-hamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon boton-hamburguesa2"></span>
+                </button>
+                <div class="collapse navbar-collapse barra-navegador-enlaces" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/compra.html">Compra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/vende.html">Vende</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline boton-buscar" type="submit">Buscar</button>
+                    </form>
                 </div>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/compra.html">Compra</a></li>
-                    <li><a href="./pages/vende.html">Vende</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="hero">
-                <h1>¡BIENVENIDO A ALITO!</h1>
-                <p>¿TE ABURRISTE DE TU VEHICULO? ¡MIRA NUESTRA PAGINA Y ENCONTRA LA MEJOR OPCION PARA VOS! </p>
-                <a href="./pages/compra.html">¡COMPRA AHORA!</a>
-            </section>
-            <section class="queres-vender">
-                <div class="queres-vender-texto">
-                    <h2>¿Queres Vender?</h2>
-                    <p>Creá tu anuncio rápidamente; tu Auto será publicado y visto por miles de interesados.<br> 
-                        ¡Tu aviso permanecerá publicado hasta que lo vendas!</p>
-                    <a href="./pages/vende.html" class="boton-queres-vender">Vender</a>
-                </div>
-                <div class="imagen-queres-vender">
-                    <img src="./img/prueba-index2.jpg" alt="background2">
-                </div>
-            </section>
-            <section class="nuevos-ingresos">
-                <h2>¡Nuevos ingresos!</h2>
-                <div class="nuevos-ingresos-tarjetas">
-                    <div>   
-                        <a href="./pages/compra.html"><img src="./img/cronos.jpg" alt="FIAT CRONOS"></a>
-                        <a href="./pages/compra.html"><h3>Fiat Cronos</h3></a>
-                    </div>
-                    <div>
-                        <a href="./pages/compra.html"><img src="./img/amarok.jpg" alt="VOLKSWAGEN AMAROK"></a>
-                        <a href="./pages/compra.html"><h3>Volkswagen Amarok</h3></a>
-                    </div>
-                    <div>
-                        <a href="./pages/compra.html"><img src="./img/kawasaki.jpg" alt="KAWASAKI NINJA"></a>
-                        <a href="./pages/compra.html"><h3>Kawasaki Ninja</h3></a>
-                    </div>
-                    <div>
-                        <a href="./pages/compra.html"><img src="./img/mercedes-1634.jpg" alt="MERCEDEZ BENZ 1634"></a>
-                        <a href="./pages/compra.html"><h3>Mercedes 1634</h3></a>
-                    </div>
-                    <div>
-                        <a href="./pages/compra.html"><img src="./img/audiq3.jpg" alt="AUDI Q3"></a>
-                        <a href="./pages/compra.html"><h3>Audi Q3</h3></a>
-                    </div>
-                </div>
-            </section>
-            <section class="acerca-de-nosotros">
-                <h2>Acerca de nosotros</h2>
-                <p>Buscamos satisfacer las necesidades de los clientes, por ende nos mantenemos abiertos a recibir criticas del público y asi lograr formar un negocio correcto. Tratamos de tener una buena confiabilidad en los vehiculos que ofrecemos en venta, y asi no traer un disgusto a un futuro comprador. Nos ubicamos en Argentina y estamos en busca de una gran expansión comercial</p>
-            </section>
-        </main>
-        <footer>
-            <img src="./img/icono.png" alt="Logo">
-            <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="Logo Facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="Logo Instagram"></a>
-                <a href="https://twitter.com/home" target="_blank"><img src="./img/signo-de-twitter.png" alt="Logo Twitter"></a>
             </div>
-        </footer>
-    </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>¡BIENVENIDO A ALITO!</h1>
+            <p>¿TE ABURRISTE DE TU VEHICULO? ¡MIRA NUESTRA PAGINA Y ENCONTRA LA MEJOR OPCION PARA VOS! </p>
+            <a href="./pages/compra.html">¡COMPRA AHORA!</a>
+        </section>
+        <section class="queres-vender">
+            <div class="queres-vender-texto">
+                <h2>¿Queres Vender?</h2>
+                <p>Creá tu anuncio rápidamente; tu Auto será publicado y visto por miles de interesados.<br>
+                    ¡Tu aviso permanecerá publicado hasta que lo vendas!</p>
+                <a href="./pages/vende.html" class="boton-queres-vender">Vender</a>
+            </div>
+            <div class="imagen-queres-vender">
+                <img src="./img/prueba-index2.jpg" alt="background2">
+            </div>
+        </section>
+        <section class="nuevos-ingresos">
+            <h2>¡Nuevos ingresos!</h2>
+            <div class="nuevos-ingresos-tarjetas">
+                <div>
+                    <a href="./pages/compra.html"><img src="./img/fiat-cronos.JPG" alt="FIAT CRONOS"></a>
+                    <a href="./pages/compra.html">
+                        <h3>Fiat Cronos</h3>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/compra.html"><img src="./img/amarok.JPG" alt="VOLKSWAGEN AMAROK"></a>
+                    <a href="./pages/compra.html">
+                        <h3>Volkswagen Amarok</h3>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/compra.html"><img src="./img/kawasaki-ninja.JPG" alt="KAWASAKI NINJA"></a>
+                    <a href="./pages/compra.html">
+                        <h3>Kawasaki Ninja</h3>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/compra.html"><img src="./img/mercedes-1634.JPG" alt="MERCEDEZ BENZ 1634"></a>
+                    <a href="./pages/compra.html">
+                        <h3>Mercedes 1634</h3>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/compra.html"><img src="./img/audi-q3.JPG" alt="AUDI Q3"></a>
+                    <a href="./pages/compra.html">
+                        <h3>Audi Q3</h3>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/compra.html"><img src="./img/ford-f150.JPG" alt="FORD F150"></a>
+                    <a href="./pages/compra.html">
+                        <h3>Ford F150</h3>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/compra.html"><img src="./img/golf-gti.JPG" alt="GOLF GTI"></a>
+                    <a href="./pages/compra.html">
+                        <h3>Golf GTI</h3>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/compra.html"><img src="./img/208-gti.JPG" alt="208 GTI"></a>
+                    <a href="./pages/compra.html">
+                        <h3>Peugeot 208</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="acerca-de-nosotros">
+            <h2>Acerca de nosotros</h2>
+            <p>Buscamos satisfacer las necesidades de los clientes, por ende nos mantenemos abiertos a recibir criticas
+                del público y asi lograr formar un negocio correcto. Tratamos de tener una buena confiabilidad en los
+                vehiculos que ofrecemos en venta, y asi no traer un disgusto a un futuro comprador. Nos ubicamos en
+                Argentina y estamos en busca de una gran expansión comercial</p>
+        </section>
+    </main>
+    <footer>
+        <img src="./img/icono.png" alt="Logo">
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"
+                    alt="Logo Instagram"></a>
+            <a href="https://twitter.com/home" target="_blank"><img src="./img/signo-de-twitter.png"
+                    alt="Logo Twitter"></a>
+        </div>
+    </footer>
+    <!--LINK-JS-BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

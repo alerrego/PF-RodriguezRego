@@ -5,22 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra</title>
+    <!--LINK BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LINK-CSS-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="header">
-        <nav>
-            <div>
-                <img src="../img/icono.png" alt="Logo">
-                <h2>ALITO</h2>
+        <nav class="navbar navbar-expand-lg barra-navegador">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/icono.png" alt="icono"></a>
+                <button class="navbar-toggler boton-hamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon boton-hamburguesa2"></span>
+                </button>
+                <div class="collapse navbar-collapse barra-navegador-enlaces" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./compra.html">Compra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./vende.html">Vende</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline boton-buscar" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./compra.html">Compra</a></li>
-                <li><a href="./vende.html">Vende</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
         </nav>
     </header>
     <main>
@@ -118,5 +142,9 @@
             <a href="https://twitter.com/home" target="_blank"><img src="../img/signo-de-twitter.png" alt="Logo Twitter"></a>
         </div>
     </footer>
+    <!--LINK-JS-BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
