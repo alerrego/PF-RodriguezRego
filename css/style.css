@@ -151,7 +151,7 @@ body{
 .nuevos-ingresos .nuevos-ingresos-tarjetas div{
         border: 3px solid rgb(72, 72, 72);
         width: 255px;
-        height: 250px;
+        height: 270px;
         margin: 15px;
         text-align: center;
         position: relative;
@@ -165,8 +165,8 @@ body{
 }
 .nuevos-ingresos .nuevos-ingresos-tarjetas div h3{
         position: absolute;
-        bottom:0;
         padding: 5px;
+        font-size: 20px;
         background-color: rgb(0, 0, 0);
         color: white;
         width: 100%;
@@ -551,40 +551,48 @@ body{
 }
 
 .vende{
-        background-color: rgba(192, 191, 191, 0.861);
+        background-color: rgba(102, 102, 102, 0.861);
         font-size: 25px;
+}
+.vende div{
+        font-size: 20px;
 }
 .vende h2{
         color: white;
         background-color: black;
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
 }
 .vende h3{
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
 }
 .vende div{
         padding: 10px;
 }
-
-.subi-imagenes{
-        background-color: rgba(192, 191, 191, 0.861);
-}
-.subi-imagenes h2{
-        font-size: 30px;
-        color: white;
+.ejemplo h2{
         background-color: black;
         text-align: center;
+        color: white;
+        margin: 0;
+}
+.carrusel-padre{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        background-color: rgba(192, 191, 191, 0.861);
 
 }
-.subi-imagenes h3{
-        font-size: 25px;
-        padding: 10px;
+.carrusel div img{
+        height: 400px;
 }
-.subi-imagenes select{
-        margin: 10px;
-        font-size: 15px;
+.carrusel div div h5{
+        color:rgb(136, 136, 136)
+}
+@media screen and (max-width:550px){
+        .carrusel div img{
+                height: 250px;
+        }
 }
 
 /*----NOSOTROS---*/
