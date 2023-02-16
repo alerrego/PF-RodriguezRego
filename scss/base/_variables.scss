@@ -1,0 +1,51 @@
+/*--------VARIABLES-------*/
+
+$color-header-footer : rgb(59,59,59);
+
+$colores:
+    black,
+    gray,
+    white,
+    rgb(59, 59, 59),
+    rgba(192, 191, 191, 0.861),
+    rgba(80, 80, 80, 0.861);
+
+$f-size:
+    10px,
+    12px,
+    14px,
+    16px,
+    20px,
+    24px,
+    28px,
+    30px,
+    40px,
+    50px;
+
+$boton: (
+    color-letra: white,
+    bg-boton: black,
+    border-boton: (2px,solid,gray)
+);
+
+%flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%hero-propiedades{
+    width: 100%;
+    height: calc(100vh - 80px);
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+@mixin margenes ($pad, $mar){
+    padding: $pad;
+    margin: $mar;
+}
+

@@ -1,0 +1,25 @@
+/*-----------FOOTER------------*/
+
+footer{
+     background-color: $color-header-footer;
+     @include margenes (10px,0px);
+     @extend %flex;
+     justify-content: space-between;
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    div{
+        a{
+            img{
+                width: 35px;
+                height: 35px;
+                @include margenes (0px,5px);
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

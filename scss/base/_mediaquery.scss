@@ -1,0 +1,777 @@
+/*--------MAIN---------*/
+
+/*--------MEDIA-QUERY-INDEX---------*/
+
+@media screen and (max-width: 1000px){
+    .hero{
+        h1{
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        a{
+        }
+    }
+    .queres-vender{
+        .queres-vender-texto{
+            h2{
+            }
+            p{
+            }
+            .boton-queres-vender{
+            }
+        }
+        .imagen-queres-vender{
+            img{
+            }
+        }   
+    }
+    .nuevos-ingresos{
+        h2{
+        }
+        .nuevos-ingresos-tarjetas{
+            div{
+                a{
+
+                }
+                a{
+                    h3{
+                    }
+                }
+            }
+        }
+    }
+    .acerca-de-nosotros{
+        h2{
+        }
+        p{
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .hero{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 15px;
+        }
+        a{
+            font-size: 13px;
+        }
+    }
+    .queres-vender{
+        .queres-vender-texto{
+            h2{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+            }
+            .boton-queres-vender{
+                font-size: 13px;
+            }
+        }
+        .imagen-queres-vender{
+            img{
+
+            }
+        }
+        
+    }
+    .nuevos-ingresos{
+        h2{
+        }
+        .nuevos-ingresos-tarjetas{
+            div{
+                a{
+                }
+                a{
+                    h3{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .acerca-de-nosotros{
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .hero{
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 11px;
+        }
+        a{
+            font-size: 8px;
+        }
+    }
+    .queres-vender{
+        .queres-vender-texto{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 11px;
+            }
+            .boton-queres-vender{
+                font-size: 8px;
+            }
+        }
+        .imagen-queres-vender{
+            img{
+            }
+        }
+    }
+    .nuevos-ingresos{
+        h2{
+        }
+        .nuevos-ingresos-tarjetas{
+            div{
+                width: 160px;
+                height: 160px;
+                a{
+                    img{
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+                a{
+                    h3{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+    .acerca-de-nosotros{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+}
+
+/*-----MEDIA-QUERY-COMPRA-------*/
+
+@media screen and (max-width:880px) {
+    .hero-compra{
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .que-buscas{
+        h2{
+            font-size: 30px;
+        }
+        .que-buscas-tarjetas{
+            div{
+                a{
+                    font-size: 15px;
+                    img{
+
+                    }
+                }
+                a{
+
+                }
+            }
+        }
+    }
+    .busqueda-especifica{
+        h2{
+
+        }
+        form{
+            div{
+                font-size: 20px;
+                label{
+
+                }
+                input{
+
+                }
+            }
+            .busqueda-especifica-boton{
+
+            }
+        }
+    }
+    .galeria{
+        h2{
+
+        }
+        .grid-galeria{
+            grid-template-columns: repeat(2,1fr);
+            .grid-galeria-img3{
+                grid-column: span 2;
+            }
+            .grid-galeria-img2{
+                    grid-column: span 1;
+            }
+            .grid-galeria-img5{
+                    grid-row: span 2;
+            }
+            .grid-galeria-img8{
+                    grid-column: span 1;
+            }
+            .grid-galeria-img9{
+                    grid-column: span 2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    .hero-compra{
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .que-buscas{
+        height: 140px;
+        h2{
+            font-size: 25px;
+        }
+        .que-buscas-tarjetas{
+            div{
+                width: 70px;
+                height: 95px;
+                a{
+                    font-size: 11px;
+                    img{
+                        width: 65px;
+                        height: 65px;
+                    }
+                }
+                a{
+
+                }
+            }
+        }
+    }
+    .busqueda-especifica{
+        h2{
+
+        }
+        form{
+            div{
+                font-size: 15px;
+                label{
+
+                }
+                input{
+
+                }
+            }
+            .busqueda-especifica-boton{
+
+            }
+        }
+    }
+    .galeria{
+        h2{
+
+        }
+        .grid-galeria{
+            grid-auto-rows: 150px;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .hero-compra{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+    .que-buscas{
+        h2{
+            font-size: 20px;
+        }
+        .que-buscas-tarjetas{
+            div{
+                a{
+                    font-size: 20px;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                a{
+
+                }
+            }
+        }
+    }
+    .busqueda-especifica{
+        h2{
+            font-size: 20px;
+        }
+        form{
+            div{
+                font-size: 11px;
+                label{
+
+                }
+                input{
+                    font-size: 11px;
+                }
+            }
+            .busqueda-especifica-boton{
+
+            }
+        }
+    }
+    .galeria{
+        h2{
+            font-size: 20px;
+        }
+        .grid-galeria{
+            grid-auto-rows: 130px;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .grid-galeria{
+            grid-auto-rows: 100px;
+    }
+}
+
+/*-----MEDIA-QUERY-VENDE------*/
+
+@media screen and (max-width:550px) {
+    .hero-vende{
+        h2{
+
+        }
+    }
+    .vende{
+        .formulario-vende{
+            form{
+                div{
+                    h3{
+
+                    }
+                    select{
+                        option{
+
+                        }
+                    }
+                    .busqueda-especifica-boton{
+
+                    }
+                }
+            }
+        }
+    }
+    .carrusel{
+        h2{
+
+        }
+        .carrusel-padre{
+            div{
+                .carrusel-imagen{
+                    img{
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-----MEDIA-QUERY-NOSOTROS-------*/
+
+@media screen and (max-width:1000px) {
+    .hero-nosotros{
+        h2{
+
+        }
+        p{
+
+        }
+    }
+    .nosotros{
+        .texto-nosotros{
+                text-align: center;
+                padding: 10px;
+                font-size: 22px;
+            h3{
+
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .imagen-nosotros{
+                display: flex;
+                justify-content: center;
+                width: 80%;
+                height: 400px;
+            img{
+
+            }
+        }
+    }
+    .queres-unirte{
+        .imagen-queres-unirte{
+
+        }
+        .texto-queres-unirte{
+            h3{
+
+            }
+            p{
+
+            }
+            a{
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .hero-nosotros{
+        h2{
+
+        }
+        p{
+
+        }
+    }
+    .nosotros{
+        .texto-nosotros{
+                font-size: 20px;
+            h3{
+
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        .imagen-nosotros{
+            img{
+
+            }
+        }
+    }
+    .queres-unirte{
+        .imagen-queres-unirte{
+
+        }
+        .texto-queres-unirte{
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+            h3{
+
+            }
+            p{
+
+            }
+            a{
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    .hero-nosotros{
+        h2{
+
+        }
+        p{
+
+        }
+    }
+    .nosotros{
+        .texto-nosotros{
+            h3{
+
+            }
+            p{
+
+            }
+        }
+        .imagen-nosotros{
+            img{
+                height: 300px;
+            }
+        }
+    }
+    .queres-unirte{
+        .imagen-queres-unirte{
+            height: 300px;
+        }
+        .texto-queres-unirte{
+            h3{
+
+            }
+            p{
+
+            }
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero-nosotros{
+        h2{
+
+        }
+        p{
+
+        }
+    }
+    .nosotros{
+        .texto-nosotros{
+            h3{
+                font-size: 17px;
+                padding: 5px;
+            }
+            p{
+                font-size: 14px;
+                padding: 5px;
+            }
+        }
+        .imagen-nosotros{
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                height: 300px;
+            img{
+                height: 300px;
+            }
+        }
+    }
+    .queres-unirte{
+        .imagen-queres-unirte{
+            display: flex;
+                justify-content: center;
+                width: 50%;
+                height: 300px;
+        }
+        .texto-queres-unirte{
+            h3{
+                font-size: 17px;
+                padding: 5px;
+            }
+            p{
+                font-size: 14px;
+                padding: 5px;
+            }
+            a{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .hero-nosotros{
+        h2{
+
+        }
+        p{
+
+        }
+    }
+    .nosotros{
+        .texto-nosotros{
+            h3{
+                font-size: 14px;
+                padding: 5px;
+            }
+            p{
+                font-size: 11px;
+                padding: 5px;
+            }
+        }
+        .imagen-nosotros{
+            display: flex;
+                justify-content: center;
+                width: 200px;
+                height: 200px;
+            img{
+                height: 200px;
+            }
+        }
+    }
+    .queres-unirte{
+        .imagen-queres-unirte{
+                display: flex;
+                justify-content: center;
+                width: 200px;
+                height: 200px;
+        }
+        .texto-queres-unirte{
+            h3{
+                font-size: 14px;
+                padding: 5px;
+            }
+            p{
+                font-size: 11px;
+                padding: 5px;
+            }
+            a{
+                font-size: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero-nosotros{
+        height: 300px;
+        h2{
+            font-size: 14px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+    .nosotros{
+        .texto-nosotros{
+            h3{
+                font-size: 11px;
+                padding: 5px;
+            }
+            p{
+                font-size: 8px;
+                padding: 5px;
+            }
+        }
+        .imagen-nosotros{
+                display: flex;
+                justify-content: center;
+                width: 140px;
+                height: 140px;
+            img{
+
+            }
+        }
+    }
+    .queres-unirte{
+        .imagen-queres-unirte{
+                display: flex;
+                justify-content: center;
+                width: 140px;
+                height: 140px;
+        }
+        .texto-queres-unirte{
+            h3{
+                font-size: 11px;
+                padding: 5px;
+            }
+            p{
+                font-size: 8px;
+                padding: 5px;
+            }
+            a{
+                font-size: 6px;
+            }
+        }
+    }
+}
+
+/*---------MEDIA-QUERY-CONTACTO-----*/
+
+@media screen and (max-width:1000px) {
+    .hero-contacto{
+        h2{
+
+        }
+        p{
+
+        }
+    }
+    .deja-mensaje{
+        h3{
+
+        }
+        .formulario{
+            form{
+                div{
+                    h4{
+
+                    }
+
+                }
+                .contacto-boton{
+                    input{
+
+                    }
+                }
+            }
+        }
+    }
+    .seguinos{
+        h2{
+
+        }
+        .seguinos-tarjetas{
+            div{
+                a{
+                    img{
+
+                    }
+                }
+                a{
+
+                }
+            }
+        }
+    }
+}
+
+/*---------MEDIA-QUERY-FOOTER-----*/
+
+@media screen and (max-width: 400px){
+    footer{
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        div{
+            a{
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
