@@ -25,7 +25,8 @@ $f-size:
 $boton: (
     color-letra: white,
     bg-boton: black,
-    border-boton: (2px,solid,gray)
+    border-boton: (2px,solid,gray),
+    border-radio: 5%
 );
 
 %flex{

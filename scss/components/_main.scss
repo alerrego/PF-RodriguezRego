@@ -10,11 +10,13 @@ main{
             h1{
                 font-size: nth($f-size,10);
                 margin-bottom: 5px;
+                text-shadow: 1px 1px 1px black;
             }
             p{
                 font-size: nth($f-size,6);
                 margin-bottom: 15px;
                 text-align: center;
+                text-shadow: 1px 1px 1px black;
             }
             a{
                 font-size: nth($f-size,5);
@@ -24,6 +26,7 @@ main{
                 color: map-get($boton,color-letra);
                 background-color: map-get($boton,bg-boton);
                 border: map-get($boton,border-boton);
+                border-radius: map-get($boton, border-radio);
                 @include margenes (10px,5px);
                 &:hover{
                     color: black;
@@ -44,7 +47,6 @@ main{
             flex-direction: column;
             align-items: center;
             h2{
-
             }
             p{
                 margin-bottom: 15px;
@@ -58,6 +60,7 @@ main{
                 color: map-get($boton,color-letra);
                 background-color: map-get($boton,bg-boton);
                 border: map-get($boton,border-boton);
+                border-radius: map-get($boton, border-radio);
                 @include margenes (10px,5px);
                 &:hover{
                     color: black;
@@ -132,7 +135,7 @@ main{
         background-image: url("../img/prueba-index4.jpg");
         width: 100%;
         height: 450px;
-        color: white;
+        color: rgb(255, 255, 255);
         background-position: center;
         background-size: cover;
         flex-direction: column;
@@ -140,11 +143,13 @@ main{
         h2{
             @include margenes (10px,0px);
             font-size: nth($f-size,8);
+            text-shadow: 3px 3px 3px black;
             text-align: center;
             color: white;
         }
         p{
             font-size: nth($f-size,6);
+            text-shadow: 3px 3px 3px black;
             @include margenes (0px,20px);
             text-align: center;
         }
@@ -158,13 +163,16 @@ main{
         background-image: url("../img/background3.jpg");
         @extend %hero-propiedades;
         @extend %flex;
-        h2{
+        h1{
             font-size: nth($f-size,10);
             margin-bottom: 5px;
+            text-shadow: 1px 1px 1px black;
         }
         p{
             font-size: nth($f-size,6);
             margin-bottom: 15px;
+            text-align: center;
+            text-shadow: 1px 1px 1px black;
         }
     }
     .que-buscas{
@@ -187,6 +195,7 @@ main{
                 display: flex;
                 flex-direction: column;
                 border: 1px solid black;
+                border-radius: map-get($boton, border-radio);
                 transition: 1s;
                 &:hover{
                     background-color: rgb(184, 182, 182);
@@ -240,6 +249,7 @@ main{
                         color: map-get($boton,color-letra);
                         background-color: map-get($boton,bg-boton);
                         border: map-get($boton,border-boton);
+                        border-radius: map-get($boton, border-radio);
                         &:hover{
                             background-color: white;
                             color: black;
@@ -294,11 +304,50 @@ main{
         background-image: url("../img/porsche2.jpg");
         @extend %hero-propiedades;
         @extend %flex;
-        h2{
-
+        h1{
+            font-size: nth($f-size,10);
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 1px black;
         }
         p{
-
+            font-size: nth($f-size,6);
+            margin-bottom: 15px;
+            text-align: center;
+            text-shadow: 1px 1px 1px black;
+        }
+    }
+    .descubri-facil{
+        background-color: rgba(192, 191, 191, 0.861);
+        h2{
+            color: white;
+            background-color: black;
+            font-size: nth($f-size,8);
+            text-align: center;
+        }
+        .descubri-facil-tarjetas{
+            @extend %flex;
+            height: 300px;
+            justify-content: space-around;
+            align-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                border: 2px solid black;
+                border-radius: 5%;
+                width: 200px;
+                margin: 5px;
+                img{
+                    height: 100px;
+                    width: 100px;
+                }
+                h3{
+                }
+                p{
+                    text-align: center;
+                }
+            }
         }
     }
     .vende{
@@ -314,7 +363,6 @@ main{
         .formulario-vende{
             font-size: nth($f-size,5);
             @include margenes (10px,0px);
-            background-color: rgba(80, 80, 80, 0.861);
             flex-direction: column;
             @extend %flex;
             form{
@@ -347,6 +395,7 @@ main{
                         color: map-get($boton,color-letra);
                         background-color: map-get($boton,bg-boton);
                         border: map-get($boton,border-boton);
+                        border-radius: map-get($boton, border-radio);
                         &:hover{
                             background-color: white;
                             color: black;
@@ -372,14 +421,15 @@ main{
                 div{
                     div{
                         img{
-                            height: 400px;
+                            height: 450px;
                         }
                     }
                 }
             }
             div{
                 h5{
-                    color:rgb(136, 136, 136)
+                    color:white;
+                    text-shadow: 1px 1px 1px black;
                 }
             }
         }
@@ -393,11 +443,17 @@ main{
         background-image: url("../img/bentley-flying-spur-hybrid-2022_1280x720_xtrafondos.com.jpg");
         @extend %hero-propiedades;
         @extend %flex;
-        h2{
-
+        h1{
+            font-size: nth($f-size,10);
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 2px black;
+            text-align: center;
         }
         p{
-
+            font-size: nth($f-size,6);
+            margin-bottom: 15px;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
         }
     }
     .nosotros{
@@ -407,7 +463,7 @@ main{
             text-align: center;
             @include margenes (10px,0px);
             font-size: nth($f-size,6);
-            h3{
+            h2{
 
             }
             p{
@@ -418,9 +474,9 @@ main{
             display: flex;
             justify-content: center;
             width: 90%;
-            height: 400px;
             img{
-
+                height: 400px;
+                width: 320px;
             }
         }
     }
@@ -432,16 +488,16 @@ main{
             display: flex;
             justify-content: center;
             width: 90%;
-            height: 400px;
             img{
-
+                height: 400px;
+                width: 320px;
             }
         }
         .texto-queres-unirte{
             text-align: center;
             @include margenes (10px,0px);
             font-size: nth($f-size,6);
-            h3{
+            h2{
 
             }
             p{
@@ -457,6 +513,7 @@ main{
                 color: map-get($boton,color-letra);
                 background-color: map-get($boton,bg-boton);
                 border: map-get($boton,border-boton);
+                border-radius: map-get($boton, border-radio);
                 &:hover{
                     color: black;
                     background-color: white;
@@ -474,15 +531,38 @@ main{
         background-image: url("../img/chevrolet-corvette-c8_1280x720_xtrafondos.com.jpg");
         @extend %hero-propiedades;
         @extend %flex;
-        h2{
-
+        h1{
+            font-size: nth($f-size,10);
+            margin-bottom: 5px;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
         }
         p{
+            font-size: nth($f-size,6);
+            margin-bottom: 15px;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+        }
+    }
+    .ayuda{
+        background-color: rgba(192, 191, 191, 0.861);
+        div{
+            text-align: center;
+            @extend %flex;
+            flex-direction: column;
+            img{
+                height: 150px;
+                width: 150px;
+            }
+            h2{
 
+            }
+            p{
+            }
         }
     }
     .deja-mensaje{
-        h3{
+        h2{
             background-color: black;
             color: white;
             text-align: center;
@@ -490,7 +570,7 @@ main{
             margin: 0%;
         }
         .formulario{
-            background-color: rgba(192, 191, 191, 0.861);
+            background-color: rgba(80, 80, 80, 0.861);
             font-size: nth($f-size,5);
             @include margenes (10px,0px);
             background-color: rgba(80, 80, 80, 0.861);
@@ -509,7 +589,7 @@ main{
                     input{
 
                     }
-                    h4{
+                    h3{
                         font-weight: 400;
                         font-size: nth($f-size,5);
                     }
@@ -541,6 +621,7 @@ main{
                         color: map-get($boton,color-letra);
                         background-color: map-get($boton,bg-boton);
                         border: map-get($boton,border-boton);
+                        border-radius: map-get($boton, border-radio +5px);
                         &:hover{
                             color: black;
                             background-color: white;
